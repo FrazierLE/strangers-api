@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   //LEVEL 1
   {id: 1, question: 'What was your first impression of me?', level: 1},
   {id: 2, question: 'What do you think is the hardest part of what I do for a living', level: 1},
@@ -172,3 +172,5 @@ export const data = [
   {id: 166, question: "What do you recommend I let go of, if anything?", level: 3},
   {id: 167, question: "In one word, describe how you feel right now", level: 3},
 ]
+
+module.exports = data

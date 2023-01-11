@@ -1,3 +1,4 @@
+const data = require('./data.js')
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -6,9 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.locals.title = 'Strangers API';
-app.locals.questions = [
- 
-];
+app.locals.questions = data;
 
 app.set('port', 3001);
 
