@@ -21,7 +21,10 @@ This app is the back-end server for [Strangers]('https://github.com/FrazierLE/st
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3001/api/v1/strangers` | GET | not needed | Array of all questions: `[{ id: 1, question: "What was your first impression of me?", level: 1}]` | |
+| `http://localhost:3001/api/v1/strangers` | GET | not needed | Array of all questions: `[{ id: 1, question: "What was your first impression of me?", level: 1}]` | 
+POST | `{ id: <Number>, question: <String>, level: <Number>' | New Question: `{id: '169', question: 'What is something you want to accomplish this year?', level: 2}` |
+| `http://localhost:3001/api/v1/strangers/:id` | DELETE | not needed | Array of all remaining questions: `[{id: '169', question: 'What is something you want to accomplish this year?', level: 2}]`
+|
 
 
 Note: All of these endpoints will return semantic errors if something is wrong with the request.
