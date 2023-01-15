@@ -1,7 +1,6 @@
 const data = require('./data.js')
 const express = require('express');
 const app = express();
-const https = require("https")
 const cors = require('cors');
 
 app.use(express.json());
