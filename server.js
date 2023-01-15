@@ -11,7 +11,7 @@ app.locals.questions = data;
 
 app.set('port', 3001);
 
-app.get('/api/v1/strangers', (request, response) => {
+app.get('/api/v1/strangers/', (request, response) => {
   response.status(200).json(app.locals.questions);
 });
 
