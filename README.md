@@ -13,6 +13,9 @@ This app is the back-end server for [Strangers]('https://github.com/FrazierLE/st
 3. Install the dependencies.
     - `npm install`
 
+### Deployed Link
+[We're Not Really Strangers API](https://strangers-api-lhr3.vercel.app/api/v1/strangers/)
+
 ### Usage
 
 1. To fire up the server, run `node server.js` or `nodemon server.js`.
