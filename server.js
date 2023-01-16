@@ -28,7 +28,7 @@ app.get('/api/v1/strangers/:id', (request, response) => {
 });
 
 app.post('/api/v1/strangers', (request, response) => {
-   const newIdea = request.body;
+   const newQuestion = request.body;
 
    for (let requiredParameter of ['id', 'question', 'level']) {
      if (!newIdea[requiredParameter]) return response.status(422).json({message: `You are missing a required parameter of ${requiredParameter}`});
@@ -45,7 +45,7 @@ app.post('/api/v1/strangers', (request, response) => {
 
    if (!match) return response.status(404).json({message: `No idea found with an id of ${id}`});
 
-   const filteredIdeas = app.locals.questions.filter(question => question.id != id);
+   const filteredQuestions = app.locals.questions.filter(question => question.id != id);
 
    app.locals.questions = filteredQuestions;
 
