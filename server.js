@@ -31,7 +31,7 @@ app.post('/api/v1/strangers', (request, response) => {
    const newQuestion = request.body;
 
    for (let requiredParameter of ['id', 'question', 'level']) {
-     if (!newIdea[requiredParameter]) return response.status(422).json({message: `You are missing a required parameter of ${requiredParameter}`});
+     if (!newQuestion[requiredParameter]) return response.status(422).json({message: `You are missing a required parameter of ${requiredParameter}`});
    }
 
    app.locals.questions = [...app.locals.questions, newQuestion];
